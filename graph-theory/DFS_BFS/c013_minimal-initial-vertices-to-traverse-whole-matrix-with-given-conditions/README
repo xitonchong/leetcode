@@ -1,0 +1,19 @@
+Input : 1 2 3
+        2 3 1
+        1 1 1
+Output : 1 1
+         0 2
+If we start from 1, 1 we can cover 6 
+vertices in the order (1, 1) -> (1, 0) -> (2, 0) 
+-> (2, 1) -> (2, 2) -> (1, 2). We cannot cover
+the entire matrix with this vertex. Remaining 
+vertices can be covered (0, 2) -> (0, 1) -> (0, 0). 
+
+Input : 3 3
+        1 1
+Output : 0 1
+If we start from 0, 1, we can traverse 
+the entire matrix from this single vertex 
+in this order (0, 0) -> (0, 1) -> (1, 1) -> (1, 0). 
+Traversing the matrix in this order 
+satisfies all the conditions stated above.
